@@ -23,6 +23,6 @@
     "workbox-sw": "*"
   },
   "scripts": {
-    "start": "gulp && node dist/server.js"
+    "start": "gulp && node index.js"
   }
 }

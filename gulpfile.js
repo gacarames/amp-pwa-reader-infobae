@@ -16,6 +16,7 @@ const historyApiFallback = require('connect-history-api-fallback');
 const fs = require('fs');
 const del = require('del');
 const workboxBuild = require('workbox-build');
+const port = process.env.PORT || 3000;
 
 
 const paths = {
