@@ -4,6 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
+    "build": "gulp",
     "start": "node app.js"
   },
   "author": "Paul Bakaus",
