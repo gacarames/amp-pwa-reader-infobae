@@ -6,6 +6,9 @@
   "author": "Paul Bakaus",
   "license": "Apache-2.0",
   "dependencies": {
+    "scripts": {
+      "start": "gulp && node index.js"
+    },
     "express": "4.13.4",
     "browser-sync": "*",
     "connect-history-api-fallback": "*",
@@ -22,7 +25,4 @@
     "workbox-build": "*",
     "workbox-sw": "*"
   },
-  "scripts": {
-    "start": "gulp && node index.js"
-  }
 }
