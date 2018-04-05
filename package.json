@@ -5,10 +5,10 @@
   "main": "gulpfile.js",
   "author": "Paul Bakaus",
   "license": "Apache-2.0",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
-    "scripts": {
-      "start": "gulp && node index.js"
-    },
     "express": "4.13.4",
     "browser-sync": "*",
     "connect-history-api-fallback": "*",
