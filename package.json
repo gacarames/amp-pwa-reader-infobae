@@ -6,7 +6,8 @@
   "author": "Paul Bakaus",
   "license": "Apache-2.0",
   "scripts": {
-    "postinstall" : "gulp build"
+    "start": "node app.js",
+    "postinstall": "gulp heroku:production"
   },
   "dependencies": {
     "express": "4.13.4",
