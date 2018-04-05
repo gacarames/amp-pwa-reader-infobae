@@ -21,9 +21,5 @@
     "uglify-es": "*",
     "workbox-build": "*",
     "workbox-sw": "*"
-  },
-  "scripts": {
-    "build": "gulp",
-    "start": "node app.js"
   }
 }
