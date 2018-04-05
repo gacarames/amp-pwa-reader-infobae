@@ -4,7 +4,8 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp serve"
+    "start": "node app",
+    "postinstall": "gulp default"
   },
   "author": "Paul Bakaus",
   "license": "Apache-2.0",

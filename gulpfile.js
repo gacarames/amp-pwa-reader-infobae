@@ -127,13 +127,14 @@ function watch() {
 var dist = gulp.series(gulp.parallel(copy, styles, scripts), inline, injectManifest);
 var dev = gulp.series(dist, watch);
 
-gulp.task('serve', function() {
-  browserSync({
-    server: {
-      baseDir: './'
-    },
-    port: process.env.PORT || 5000
-  });
+gulp.task('dev', dev);
+gulp.task('dist', dist);
+gulp.task('default', dev);
 
-  gulp.watch(['*.html', 'css/*.css', 'js/*.js', 'views/*.html', 'template/*.html', './*.html'], {cwd: 'app'}, reload);
+gulp.task('serveprod', function() {
+  connect.server({
+    root: [your_project_path],
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false
+  });
 });
