@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <link rel="manifest" href="/manifest.json">
+  <title>Infobae</title>
+  <style>/* REPLACED-INLINE-STYLESHEET */</style>
+
+  <!-- Asynchronously load the AMP-with-Shadow-DOM runtime library. -->
+  <script async src="https://cdn.ampproject.org/shadow-v0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body class="sr-skeleton-ui">
+
+<!-- Load critical state-parsing JS to show the right skeleton UI at the right time -->
+<script>
+/^\/[^\/]+\/[^\/]+\/[^\/]+/.test(location.pathname) && document.body.classList.add('sr-skeleton-ui-article');
+</script>
+
+  <div class="sr-wrapper">
+
+    <header>
+
+      <button class="sr-hamburger" aria-label="Menu">
+        <span class="sr-hamburger-box">
+          <span class="sr-hamburger-inner"></span>
+        </span>
+      </button>
+
+      <img class="infobae" src="/img/infobae.svg" alt="Infobae" width="240" height="45">
+    </header>
+
+    <ul class="sr-navigation">
+    </ul>
+
+    <div class="sr-navigation-skirt">
+    </div>
+
+    <div class="sr-category">
+      <h1><span>CATEGORY</span></h1>
+    </div>
+
+    <div class="note-desktop">
+      <h3>This sample app is intended to be used on mobile resolutions.</h3>
+      The responsive design scales to Desktop, but The Guardian's AMP pages don't, so link clicks on cards go to the
+      Desktop page instead.
+    </div>
+
+    <main>
+
+      <div class="sr-card">
+        <img/>
+        <a class="sr-inner">
+          <h2>~~~~~~ ~~~ ~~~~~~~~ ~~~ ~~~~~~~~ ~~~~ ~~~~~</h2>
+          <p>~~~~~~ ~~~ ~~~~~~~~ ~~~ ~~~~~~~~ ~~~~ ~~~~~ ~~~~~~ ~~~ ~~~~~~~~ ~~~ ~~~~~~~~ ~~~~ ~~~~~ ~~~~~~ ~~~ ~~~~~~~~ ~~~ ~~~~~~~~ ~~~~ ~~~~~</p>
+        </a>
+      </div>
+
+      <div class="sr-card">
+        <img/>
+        <a class="sr-inner">
+          <h2>~~~~~~ ~~~ ~~~~~~~~ ~~~ ~~~~~~~~ ~~~~ ~~~~~</h2>
+          <p>~~~~~~ ~~~ ~~~~~~~~ ~~~ ~~~~~~~~ ~~~~ ~~~~~ ~~~~~~ ~~~ ~~~~~~~~ ~~~ ~~~~~~~~ ~~~~ ~~~~~ ~~~~~~ ~~~ ~~~~~~~~ ~~~ ~~~~~~~~ ~~~~ ~~~~~</p>
+        </a>
+      </div>
+
+      <div class="sr-card">
+        <img/>
+        <a class="sr-inner">
+          <h2>~~~~~~ ~~~ ~~~~~~~~ ~~~ ~~~~~~~~ ~~~~ ~~~~~</h2>
+          <p>~~~~~~ ~~~ ~~~~~~~~ ~~~ ~~~~~~~~ ~~~~ ~~~~~ ~~~~~~ ~~~ ~~~~~~~~ ~~~ ~~~~~~~~ ~~~~ ~~~~~ ~~~~~~ ~~~ ~~~~~~~~ ~~~ ~~~~~~~~ ~~~~ ~~~~~</p>
+        </a>
+      </div>
+
+    </main>
+
+    <div class="sr-article-skeleton-ui">
+    </div>
+
+  </div>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js?features=default,fetch"></script>
+<script>/* REPLACED-INLINE-JAVASCRIPT */</script>
+</body>
+</html>

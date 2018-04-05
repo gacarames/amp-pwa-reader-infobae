@@ -1,0 +1,93 @@
+/* Navigation Menu */
+.sr-navigation {
+    width: 80vw;
+    height: 100vh;
+    max-width: 200px;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    transform: translateX(-100%);
+
+    list-style: none;
+    background: #000;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+    box-sizing: border-box;
+    padding-left: 18px;
+    padding-top: 20px;
+
+    font-family:"Guardian Egyptian Headline";
+    font-weight: 500;
+
+    li {
+        border-top: 1px solid #005689;
+
+        a {
+            display: block;
+            height: 34px;
+            padding-top: 2px;
+            color: white;
+            font-size: 22px;
+            text-decoration: none;
+
+            &:focus {
+                outline: 0;
+                color: #4BC6DF;
+            }
+
+            &:hover {
+                color: #4BC6DF;
+            }
+        }
+
+        &.active {
+            a {
+                border-top: 1px solid #4BC6DF;
+                color: #4BC6DF;
+            }
+        }
+
+    }
+
+}
+
+.sr-navigation-skirt {
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.sr-nav-shown .sr-navigation-skirt {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.sr-navigation,
+.sr-navigation-skirt {
+    transition: transform var(--animation-speed-out) var(--animation-easing),
+                opacity var(--animation-speed-out) var(--animation-easing);
+}
+
+.sr-nav-shown .sr-navigation,
+.sr-nav-shown .sr-navigation-skirt {
+    transform: translateX(0);
+    transition: transform var(--animation-speed-in) var(--animation-easing),
+                opacity var(--animation-speed-out) var(--animation-easing);
+}
+
+/* Desktop/Tablet */
+@media (min-width: $mobile-breakpoint) {
+
+    .sr-navigation {
+        transform: translateX(0);
+        z-index: auto;
+    }
+
+}
