@@ -127,6 +127,13 @@ function watch() {
 var dist = gulp.series(gulp.parallel(copy, styles, scripts), inline, injectManifest);
 var dev = gulp.series(dist, watch);
 
-gulp.task('dev', dev);
-gulp.task('dist', dist);
-gulp.task('default', dev);
+gulp.task('serve', function() {
+  browserSync({
+    server: {
+      baseDir: './'
+    },
+    port: process.env.PORT || 5000
+  });
+
+  gulp.watch(['*.html', 'css/*.css', 'js/*.js', 'views/*.html', 'template/*.html', './*.html'], {cwd: 'app'}, reload);
+});
