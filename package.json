@@ -21,5 +21,8 @@
     "uglify-es": "*",
     "workbox-build": "*",
     "workbox-sw": "*"
+  },
+  "scripts": {
+    "start": "node ./src/index.html"
   }
 }
