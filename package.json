@@ -23,7 +23,7 @@
     "workbox-sw": "*"
   },
   "scripts": {
-    "start": "node app",
-    "postinstall": "gulp default"
+    "build": "gulp",
+    "start": "node app.js"
   }
 }

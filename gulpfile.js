@@ -130,11 +130,3 @@ var dev = gulp.series(dist, watch);
 gulp.task('dev', dev);
 gulp.task('dist', dist);
 gulp.task('default', dev);
-
-gulp.task('serveprod', function() {
-  connect.server({
-    root: ['./src/'],
-    port: process.env.PORT || 5000, // localhost:5000
-    livereload: false
-  });
-});
