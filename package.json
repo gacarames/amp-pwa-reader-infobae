@@ -1,11 +1,10 @@
 {
-  "name": "ShadowReader",
+  "name": "Infobae",
   "version": "0.0.1",
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "node app",
-    "postinstall": "gulp default"
+    "start": "node app.js"
   },
   "author": "Paul Bakaus",
   "license": "Apache-2.0",
