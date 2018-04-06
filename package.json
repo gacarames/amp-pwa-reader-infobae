@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "./gulpfile.js",
+    "start": "./index.php",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Paul Bakaus",
