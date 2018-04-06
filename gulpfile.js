@@ -126,22 +126,7 @@ function watch() {
 
 var dist = gulp.series(gulp.parallel(copy, styles, scripts), inline, injectManifest);
 var dev = gulp.series(dist, watch);
-var port = process.env.PORT || 3000;
-server.listen(port, function() {
-    console.log("App is running on port " + port);
-});
 
 gulp.task('dev', dev);
 gulp.task('dist', dist);
 gulp.task('default', dev);
-
-gulp.task('serve', function() {
-  browserSync({
-    server: {
-      baseDir: './'
-    },
-    port: process.env.PORT || 3000
-  });
-
-  gulp.watch(['*.html', 'css/*.css', 'js/*.js', 'views/*.html', 'template/*.html', './*.html'], {cwd: 'app'}, reload);
-});
