@@ -130,5 +130,9 @@ var dev = gulp.series(dist, watch);
 gulp.task('dev', dev);
 gulp.task('dist', dist);
 gulp.task('default', dev);
+ghpages = require('gulp-gh-pages');
 
-const port = process.env.PORT || 3000;
+gulp.task('deploy', function() {
+   return gulp.src(options.dist + '**/*')
+              .pipe(ghpages()
+);})

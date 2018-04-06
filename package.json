@@ -5,6 +5,9 @@
   "main": "gulpfile.js",
   "author": "Paul Bakaus",
   "license": "Apache-2.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "express": "4.13.4",
     "browser-sync": "*",
