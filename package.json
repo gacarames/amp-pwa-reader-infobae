@@ -6,7 +6,7 @@
   "author": "Paul Bakaus",
   "license": "Apache-2.0",
   "scripts": {
-    "poststart": "npm prune --production"
+    "postinstall": "cd client && npm install && gulp build"
   },
   "dependencies": {
     "express": "4.13.4",
