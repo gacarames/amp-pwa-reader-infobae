@@ -5,8 +5,13 @@
   "main": "gulpfile.js",
   "author": "Paul Bakaus",
   "license": "Apache-2.0",
+  "root": "dist/",
+  "clean_urls": true,
+  "routes": {
+      "/**": "index.html"
+  },
   "scripts": {
-    "postinstall": "cd client && npm install && gulp build"
+  "heroku-postbuild": "gulp"
   },
   "dependencies": {
     "express": "4.13.4",

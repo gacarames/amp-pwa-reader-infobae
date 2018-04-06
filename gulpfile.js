@@ -127,15 +127,6 @@ function watch() {
 var dist = gulp.series(gulp.parallel(copy, styles, scripts), inline, injectManifest);
 var dev = gulp.series(dist, watch);
 
-gulp.task('heroku', ['wiredep','inject'], function () {
-  return gulp.src(config.base)
-    .pipe(plugins.webserver({
-        host: '0.0.0.0', 
-        port: process.env.PORT,
-        livereload: false,
-        open: false
-    }));
-});
 gulp.task('dev', dev);
 gulp.task('dist', dist);
 gulp.task('default', dev);
