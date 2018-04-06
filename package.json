@@ -5,9 +5,6 @@
   "main": "gulpfile.js",
   "author": "Paul Bakaus",
   "license": "Apache-2.0",
-  "scripts": {
-    "postinstall": "cd client && npm install && gulp build"
-  },
   "dependencies": {
     "express": "4.13.4",
     "browser-sync": "*",
