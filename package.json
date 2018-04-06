@@ -4,16 +4,14 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "gulp"
-   },
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "author": "Paul Bakaus",
   "license": "Apache-2.0",
   "dependencies": {
-    "basic-auth": "^2.0.0",
     "browser-sync": "*",
     "connect-history-api-fallback": "*",
     "del": "*",
-    "express": "4.13.4",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "*",
     "gulp-concat": "*",

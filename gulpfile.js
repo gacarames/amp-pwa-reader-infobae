@@ -130,4 +130,3 @@ var dev = gulp.series(dist, watch);
 gulp.task('dev', dev);
 gulp.task('dist', dist);
 gulp.task('default', dev);
-gulp.task('heroku', 'build');
