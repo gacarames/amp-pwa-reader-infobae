@@ -1,12 +1,14 @@
 {
-  "name": "Infobae",
+  "name": "ShadowReader",
   "version": "0.0.1",
   "description": "",
   "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "author": "Paul Bakaus",
   "license": "Apache-2.0",
   "dependencies": {
-    "express": "4.13.4",
     "browser-sync": "*",
     "connect-history-api-fallback": "*",
     "del": "*",
