@@ -9,10 +9,11 @@
   "author": "Paul Bakaus",
   "license": "Apache-2.0",
   "dependencies": {
-    "express": "4.13.4",
+    "basic-auth": "^2.0.0",
     "browser-sync": "*",
     "connect-history-api-fallback": "*",
     "del": "*",
+    "express": "4.13.4",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "*",
     "gulp-concat": "*",
