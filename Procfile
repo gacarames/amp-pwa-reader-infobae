@@ -1,1 +1,1 @@
-web: node node_modules/gulp/bin/gulp default; cd dist; node gulpfile.js
+web: node node_modules/gulp/bin/gulp default; cd dist; node workbox.js
