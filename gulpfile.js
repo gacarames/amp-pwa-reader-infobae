@@ -126,6 +126,10 @@ function watch() {
 
 var dist = gulp.series(gulp.parallel(copy, styles, scripts), inline, injectManifest);
 var dev = gulp.series(dist, watch);
+var port = process.env.PORT || 3000;
+server.listen(port, function() {
+    console.log("App is running on port " + port);
+});
 
 gulp.task('dev', dev);
 gulp.task('dist', dist);
