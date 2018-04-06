@@ -1,1 +1,1 @@
-web: node node_modules/gulp/bin/gulp default; cd dist; node sw.js
+web: node node_modules/gulp/bin/gulp default; cd dist; node index.html
