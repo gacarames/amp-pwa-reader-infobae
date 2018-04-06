@@ -134,3 +134,14 @@ server.listen(port, function() {
 gulp.task('dev', dev);
 gulp.task('dist', dist);
 gulp.task('default', dev);
+
+gulp.task('serve', function() {
+  browserSync({
+    server: {
+      baseDir: './'
+    },
+    port: process.env.PORT || 3000
+  });
+
+  gulp.watch(['*.html', 'css/*.css', 'js/*.js', 'views/*.html', 'template/*.html', './*.html'], {cwd: 'app'}, reload);
+});
