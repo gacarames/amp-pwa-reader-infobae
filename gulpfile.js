@@ -131,6 +131,13 @@ gulp.task('dev', dev);
 gulp.task('dist', dist);
 gulp.task('default', dev);
 
-gulp.task("heroku:production", function(){
-    console.log('hello'); // the task does not need to do anything.
+gulp.task('serve', function() {
+  browserSync({
+    server: {
+      baseDir: './'
+    },
+    port: process.env.PORT || 5000
+  });
+
+  gulp.watch(['*.html', 'css/*.css', 'js/*.js', 'views/*.html', 'template/*.html', './*.html'], {cwd: 'app'}, reload);
 });
