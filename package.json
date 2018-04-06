@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "gulp dist"
+    "build": "gulp"
    },
   "author": "Paul Bakaus",
   "license": "Apache-2.0",
