@@ -4,7 +4,6 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "./index.php",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Paul Bakaus",
@@ -13,9 +12,9 @@
     "browser-sync": "*",
     "connect-history-api-fallback": "*",
     "del": "*",
-    "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "*",
     "gulp-concat": "*",
+    "gulp-file": "^0.4.0",
     "gulp-plumber": "*",
     "gulp-replace": "*",
     "gulp-sass": "*",
@@ -24,5 +23,8 @@
     "uglify-es": "*",
     "workbox-build": "*",
     "workbox-sw": "*"
+  },
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0"
   }
 }
