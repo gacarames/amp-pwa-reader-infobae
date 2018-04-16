@@ -18,8 +18,8 @@ For a production build, call
 
 ## Caveats
 
-As this is a purely client-side demo using third-party AMP pages from the Guardian that we have limited control over, there are a few gotchas with the demo:
+As this is a purely client-side demo using third-party AMP pages from that we have limited control over, there are a few gotchas with the demo:
 
 - Search engines that don't understand JS won't be able to crawl the site (use hybrid rendering to address).
-- The navigation is a giant hack that fetches the Guardian's RSS feeds through YQL. That adds lots of latency (two server hops, 200kb of data). In a production environment, you'd of course fetch lightweight JSON from somewhere directly.
+- The navigation is a giant hack that fetches RSS feeds through YQL. That adds lots of latency (two server hops, 200kb of data). In a production environment, you'd of course fetch lightweight JSON from somewhere directly.
 - AMP pages are proxied through a [Glitch app](https://glitch.com/edit/#!/seed-octagon) to add CORS headers, also adding load latency. In production, you'd allow CORS access to your AMP pages to wherever your PWA lives.

@@ -12,19 +12,16 @@
     "browser-sync": "*",
     "connect-history-api-fallback": "*",
     "del": "*",
+    "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "*",
     "gulp-concat": "*",
-    "gulp-file": "^0.4.0",
     "gulp-plumber": "*",
     "gulp-replace": "*",
     "gulp-sass": "*",
     "gulp-sourcemaps": "*",
     "gulp-uglify": "*",
     "uglify-es": "*",
-    "workbox-build": "*",
-    "workbox-sw": "*"
-  },
-  "devDependencies": {
-    "gulp": "github:gulpjs/gulp#4.0"
+    "workbox-build": "2.1.*",
+    "workbox-sw": "2.1.*"
   }
 }

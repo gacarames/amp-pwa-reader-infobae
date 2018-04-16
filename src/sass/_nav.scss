@@ -9,7 +9,7 @@
     transform: translateX(-100%);
 
     list-style: none;
-    background: #000;
+    background: #fff;
     margin: 0;
     padding: 0;
     z-index: 5;
@@ -17,34 +17,34 @@
     padding-left: 18px;
     padding-top: 20px;
 
-    font-family:"Guardian Egyptian Headline";
+    font-family:Arial,Helvetica,sans-serif;
     font-weight: 500;
 
     li {
-        border-top: 1px solid #005689;
+        border-bottom: 1px solid #d5d5d5;
 
         a {
             display: block;
-            height: 34px;
-            padding-top: 2px;
-            color: white;
-            font-size: 22px;
+//            height: 34px;
+            padding: 10px 0;
+            color: #333;
+            font-size: 20px;
             text-decoration: none;
 
             &:focus {
                 outline: 0;
-                color: #4BC6DF;
+                color: #F68E1E;
             }
 
             &:hover {
-                color: #4BC6DF;
+                color: #F68E1E;
             }
         }
 
         &.active {
             a {
-                border-top: 1px solid #4BC6DF;
-                color: #4BC6DF;
+//                border-top: 1px solid #F68E1E;
+                color: #F68E1E;
             }
         }
 
